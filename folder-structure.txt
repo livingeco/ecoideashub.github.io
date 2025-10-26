@@ -1,0 +1,171 @@
+Folder PATH listing for volume OS
+Volume serial number is 5E4C-C657
+C:.
+|   author-sitemap.xml
+|   category-sitemap.xml
+|   favicon.ico
+|   folder-structure.txt
+|   index.html
+|   page-sitemap.xml
+|   post-sitemap.xml
+|   robots.txt
+|   sitemap.xml
+|   sitemap_index.xml
+|   
++---2025
+|   |   index.html
+|   |   
+|   \---10
+|       |   index.html
+|       |   
+|       \---05
+|           |   index.html
+|           |   
+|           \---eco-friendly-living
+|                   index.html
+|                   
++---about-us
+|       index.html
+|       
++---affiliate-discloser
+|       index.html
+|       
++---assets
+|   \---images
+|           .gitkeep
+|           6.png
+|           8.png
+|           9.png
+|           A before-and-after of DIY upcycling projects (e.g., turning old shirts into tote bags).png
+|           A bright, airy room with indoor plants, solar-powered gadgets, and natural lighting.png
+|           A Compost Bin for Ga.png
+|           a container with one.png
+|           A flat lay of second-hand clothes, upcycled denim, and organic cotton outfits.png
+|           A Garden Kneeler and.png
+|           a modern, elegant withouttext_JPG.jpg
+|           A neatly organized shelf with glass jars, reusable produce bags, bamboo utensils, and beeswax wraps.png
+|           A zero-waste kitchen setup with compost bins, metal straws, and cloth napkins.png
+|           beeswaxwrap.png
+|           complete Garden Tool.png
+|           compostbin.png
+|           Copilot_20250926_190245.png
+|           Copilot_20250926_202927.png
+|           Copilot_20250926_203439.png
+|           LED Warm White Bulb.png
+|           LED White Bulb.png
+|           metal straws.png
+|           peace lily indoor pl.png
+|           pinlogo.jpg
+|           PrivacyP.jpg
+|           purely stainless ste.png
+|           Raised Garden Bed Ki.png
+|           solar powered garden.png
+|           solar powered power .png
+|           Sustainable and Zero- Waste Living (1).jpg
+|           Sustainable and Zero- Waste Living (2).jpg
+|           Sustainable and Zero- Waste Living.jpg
+|           Untitled.png
+|           white sheer linen cu.png
+|           
++---category
+|   \---sustainable-living
+|       |   index.html
+|       |   
+|       \---page
+|           \---1
+|                   index.html
+|                   
++---page
+|   \---1
+|           index.html
+|           
++---privacy-policy-2
+|       index.html
+|       
++---terms-conditions
+|       index.html
+|       
+\---wp-content
+    \---themes
+        \---twentytwentyfive
+            \---assets
+                +---css
+                |       editor-style.css
+                |       
+                +---fonts
+                |   +---beiruti
+                |   |       Beiruti-VariableFont_wght.woff2
+                |   |       
+                |   +---fira-code
+                |   |       FiraCode-VariableFont_wght.woff2
+                |   |       
+                |   +---fira-sans
+                |   |       FiraSans-Black.woff2
+                |   |       FiraSans-BlackItalic.woff2
+                |   |       FiraSans-Bold.woff2
+                |   |       FiraSans-BoldItalic.woff2
+                |   |       FiraSans-ExtraBold.woff2
+                |   |       FiraSans-ExtraBoldItalic.woff2
+                |   |       FiraSans-ExtraLight.woff2
+                |   |       FiraSans-ExtraLightItalic.woff2
+                |   |       FiraSans-Italic.woff2
+                |   |       FiraSans-Light.woff2
+                |   |       FiraSans-LightItalic.woff2
+                |   |       FiraSans-Medium.woff2
+                |   |       FiraSans-MediumItalic.woff2
+                |   |       FiraSans-Regular.woff2
+                |   |       FiraSans-SemiBold.woff2
+                |   |       FiraSans-SemiBoldItalic.woff2
+                |   |       FiraSans-Thin.woff2
+                |   |       FiraSans-ThinItalic.woff2
+                |   |       
+                |   +---literata
+                |   |       Literata72pt-Black.woff2
+                |   |       Literata72pt-BlackItalic.woff2
+                |   |       Literata72pt-Bold.woff2
+                |   |       Literata72pt-BoldItalic.woff2
+                |   |       Literata72pt-ExtraBold.woff2
+                |   |       Literata72pt-ExtraBoldItalic.woff2
+                |   |       Literata72pt-ExtraLight.woff2
+                |   |       Literata72pt-ExtraLightItalic.woff2
+                |   |       Literata72pt-Light.woff2
+                |   |       Literata72pt-LightItalic.woff2
+                |   |       Literata72pt-Medium.woff2
+                |   |       Literata72pt-MediumItalic.woff2
+                |   |       Literata72pt-Regular.woff2
+                |   |       Literata72pt-RegularItalic.woff2
+                |   |       Literata72pt-SemiBold.woff2
+                |   |       Literata72pt-SemiBoldItalic.woff2
+                |   |       
+                |   +---manrope
+                |   |       Manrope-VariableFont_wght.woff2
+                |   |       
+                |   +---platypi
+                |   |       Platypi-Italic-VariableFont_wght.woff2
+                |   |       Platypi-VariableFont_wght.woff2
+                |   |       
+                |   +---roboto-slab
+                |   |       RobotoSlab-VariableFont_wght.woff2
+                |   |       
+                |   +---vollkorn
+                |   |       Vollkorn-Italic-VariableFont_wght.woff2
+                |   |       Vollkorn-VariableFont_wght.woff2
+                |   |       
+                |   \---ysabeau-office
+                |           YsabeauOffice-Italic-VariableFont_wght.woff2
+                |           YsabeauOffice-VariableFont_wght.woff2
+                |           
+                \---images
+                        404-image.webp
+                        agenda-img-4.webp
+                        akaka-falls-state-park-flora.webp
+                        book-image-landing.webp
+                        book-image.webp
+                        botany-flowers-closeup.webp
+                        botany-flowers.webp
+                        campanula-alliariifolia-flower.webp
+                        category-anthuriums.webp
+                        category-cactus.webp
+                        category-sunflowers.webp
+                        coming-soon-bg-image.webp
+                        

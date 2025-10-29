@@ -1,7 +1,7 @@
 a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
 
 
-/* Force footer nav links to display inline (horizontally) */
+/* --- Force footer nav links to display inline (horizontal) --- */
 .wp-block-navigation.is-horizontal .wp-block-navigation__container {
     display: flex !important;
     flex-direction: row !important;
@@ -13,21 +13,21 @@ a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
     list-style-type: none !important;
 }
 
-.wp-block-navigation.is-horizontal .wp-block-navigation__container li {
-    list-style: none !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+    .wp-block-navigation.is-horizontal .wp-block-navigation__container li {
+        list-style: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
 
-.wp-block-navigation.is-horizontal .wp-block-navigation__container a {
-    text-decoration: none !important;
-    color: #333 !important;
-    font-weight: 500 !important;
-}
+    .wp-block-navigation.is-horizontal .wp-block-navigation__container a {
+        text-decoration: none !important;
+        color: #333 !important;
+        font-weight: 500 !important;
+    }
 
-.wp-block-navigation.is-horizontal .wp-block-navigation__container a:hover {
-    text-decoration: underline !important;
-}
+        .wp-block-navigation.is-horizontal .wp-block-navigation__container a:hover {
+            text-decoration: underline !important;
+        }
 
 /* Style “Write to Us” button to align on right properly */
 .footer-button a,
@@ -41,6 +41,7 @@ a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
     box-shadow: 0 3px 6px rgba(0,0,0,0.1) !important;
     text-decoration: none !important;
 }
+
 
 
 

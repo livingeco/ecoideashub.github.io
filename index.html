@@ -175,84 +175,68 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <link href="wp-content/uploads/2025/10/cropped-a-modern-elegant-withouttext_JPG-180x180.jpg" rel="apple-touch-icon"/>
 <meta content="wp-content/uploads/2025/10/cropped-a-modern-elegant-withouttext_JPG-270x270.jpg" name="msapplication-TileImage"/>
 
-<style>
-/* === FIX HEADER MENU (restore + align) === */
-
-/* Make header visible again */
-header,
-header .wp-block-group,
-header nav.wp-block-navigation {
+/* Header layout fix */
+header.wp-block-template-part,
+.wp-block-group.alignwide {
   display: flex !important;
   align-items: center !important;
   justify-content: space-between !important;
-  flex-wrap: nowrap !important;
-  gap: 1rem !important;
   padding: 0.5rem 2rem !important;
-  background-color: #fff !important;
-  z-index: 1000 !important;
 }
 
-/* Make sure navigation container is visible */
-header .wp-block-navigation__container {
+/* Logo */
+.wp-block-site-logo img {
+  max-height: 70px !important;
+  width: auto !important;
+}
+
+/* Navigation links in one row */
+nav.wp-block-navigation .wp-block-navigation__container {
   display: flex !important;
   flex-direction: row !important;
   align-items: center !important;
-  gap: 1.5rem !important;
+  gap: 2rem !important;
+  list-style: none !important;
   margin: 0 !important;
   padding: 0 !important;
-  list-style: none !important;
-  visibility: visible !important;
-  opacity: 1 !important;
 }
 
-/* Fix hidden nav due to responsive script */
-.wp-block-navigation__responsive-container {
-  display: flex !important;
-  visibility: visible !important;
-  opacity: 1 !important;
-  position: static !important;
-  transform: none !important;
-  height: auto !important;
-  background: transparent !important;
-}
-
-/* Horizontal list items */
-header .wp-block-navigation__container > li {
-  display: inline-flex !important;
-}
-
-/* Link styles */
-header .wp-block-navigation__container a {
+/* Links style */
+nav.wp-block-navigation .wp-block-navigation__container a {
   text-decoration: none !important;
   color: #333 !important;
   font-weight: 500 !important;
+  font-size: 16px !important;
 }
 
-/* Contact button on right */
-header .wp-block-buttons .wp-block-button__link {
+/* Contact Us button */
+.wp-block-buttons .wp-block-button a {
   background-color: #8bc34a !important;
-  color: #fff !important;
+  color: white !important;
   border-radius: 30px !important;
   padding: 10px 25px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
-  margin-left: 2rem !important;
+  transition: 0.3s ease !important;
 }
 
-/* Responsive stacking */
+.wp-block-buttons .wp-block-button a:hover {
+  background-color: #7ab13e !important;
+}
+
+/* Responsive fix for mobile */
 @media (max-width: 768px) {
-  header,
-  header nav.wp-block-navigation {
+  header.wp-block-template-part,
+  .wp-block-group.alignwide {
     flex-direction: column !important;
-    align-items: flex-start !important;
   }
 
-  header .wp-block-navigation__container {
+  nav.wp-block-navigation .wp-block-navigation__container {
     flex-direction: column !important;
-    gap: 0.75rem !important;
+    gap: 1rem !important;
   }
 }
-</style>
+
 
 
 

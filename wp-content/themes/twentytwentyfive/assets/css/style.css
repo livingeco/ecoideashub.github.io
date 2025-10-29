@@ -1,92 +1,67 @@
 a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
 
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+/* Header layout fix */
+header.wp-block-template-part,
+.wp-block-group.alignwide {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 0.5rem 2rem !important;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit;
+/* Logo */
+.wp-block-site-logo img {
+    max-height: 70px !important;
+    width: auto !important;
 }
 
-a {
-    text-decoration-thickness: 1px !important;
-    text-underline-offset: .1em !important;
-    color: #006400;
-    transition: color 0.2s ease-in-out;
-}
-
-    a:hover, a:focus {
-        color: #8bc34a;
-        text-decoration: underline;
-    }
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-body {
-    line-height: 1.6;
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: #333;
-    background-color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-.alignwide {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.alignfull {
-    width: 100%;
-}
-
-
-
-/* --- Force footer nav links to display inline (horizontal) --- */
-.wp-block-navigation.is-horizontal .wp-block-navigation__container {
+/* Navigation links in one row */
+nav.wp-block-navigation .wp-block-navigation__container {
     display: flex !important;
     flex-direction: row !important;
-    gap: 1.5rem !important;
-    justify-content: flex-end !important;
     align-items: center !important;
+    gap: 2rem !important;
+    list-style: none !important;
     margin: 0 !important;
     padding: 0 !important;
-    list-style-type: none !important;
 }
 
-    .wp-block-navigation.is-horizontal .wp-block-navigation__container li {
-        list-style: none !important;
-        margin: 0 !important;
-        padding: 0 !important;
-    }
-
-    .wp-block-navigation.is-horizontal .wp-block-navigation__container a {
+    /* Links style */
+    nav.wp-block-navigation .wp-block-navigation__container a {
         text-decoration: none !important;
         color: #333 !important;
         font-weight: 500 !important;
+        font-size: 16px !important;
     }
 
-        .wp-block-navigation.is-horizontal .wp-block-navigation__container a:hover {
-            text-decoration: underline !important;
-        }
-
-/* Style “Write to Us” button to align on right properly */
-.footer-button a,
+/* Contact Us button */
 .wp-block-buttons .wp-block-button a {
-    margin-left: 2rem !important;
     background-color: #8bc34a !important;
-    color: #fff !important;
-    border-radius: 25px !important;
-    padding: 0.5rem 1rem !important;
+    color: white !important;
+    border-radius: 30px !important;
+    padding: 10px 25px !important;
     font-weight: 600 !important;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.1) !important;
     text-decoration: none !important;
+    transition: 0.3s ease !important;
 }
+
+    .wp-block-buttons .wp-block-button a:hover {
+        background-color: #7ab13e !important;
+    }
+
+/* Responsive fix for mobile */
+@media (max-width: 768px) {
+    header.wp-block-template-part,
+    .wp-block-group.alignwide {
+        flex-direction: column !important;
+    }
+
+    nav.wp-block-navigation .wp-block-navigation__container {
+        flex-direction: column !important;
+        gap: 1rem !important;
+    }
+}
+
 
 
 

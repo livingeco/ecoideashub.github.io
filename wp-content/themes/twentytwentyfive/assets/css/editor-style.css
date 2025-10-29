@@ -1,40 +1,55 @@
 a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
 
 
-.footer-nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+/* Force footer links to display horizontally */
+.footer-nav ul,
+.footer-links-horizontal,
+.wp-block-navigation__container {
+  display: flex !important;
+  flex-direction: row !important;
+  gap: 1.5rem !important;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
 }
 
-.footer-links-horizontal {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+/* Remove bullets if any remain */
+.footer-nav li {
+  list-style: none !important;
 }
 
-.footer-links-horizontal a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
+/* Make links cleaner */
+.footer-nav a {
+  text-decoration: none !important;
+  color: #333 !important;
+  font-weight: 500 !important;
 }
 
-.footer-links-horizontal a:hover {
-  text-decoration: underline;
+.footer-nav a:hover {
+  text-decoration: underline !important;
 }
 
+/* Button alignment */
 .footer-button a {
-  background-color: #8bc34a;
-  color: white;
-  border-radius: 25px;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  text-decoration: none;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+  background-color: #8bc34a !important;
+  color: white !important;
+  border-radius: 25px !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600 !important;
+  text-decoration: none !important;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1) !important;
 }
+
+/* Align the whole footer section horizontally */
+.footer-nav {
+  display: flex !important;
+  justify-content: flex-end !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+  gap: 2rem !important;
+}
+
 
 

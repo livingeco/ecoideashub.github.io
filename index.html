@@ -2,6 +2,103 @@
 
 <html lang="en-US">
 <head>
+
+<style>
+/* ---------- Force desktop header layout (high specificity + !important) ---------- */
+
+/* Container for header area */
+.wp-site-blocks > header.wp-block-template-part,
+.wp-site-blocks > header.wp-block-template-part .wp-block-group.alignfull,
+.wp-site-blocks > header.wp-block-template-part .wp-block-group.alignwide {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 1rem !important;
+  padding: 0.6rem 2rem !important;
+}
+
+/* Logo (left) */
+.wp-site-blocks > header.wp-block-template-part .wp-block-site-logo img,
+.wp-site-blocks > header.wp-block-template-part .wp-block-site-logo .custom-logo {
+  max-height: 88px !important;
+  width: auto !important;
+  display: block !important;
+}
+
+/* Navigation: make links inline, horizontal and centered/right */
+.wp-site-blocks header.wp-block-template-part nav.wp-block-navigation.is-horizontal,
+.wp-site-blocks header.wp-block-template-part nav.wp-block-navigation.is-horizontal .wp-block-navigation__container {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 2rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+}
+
+/* Individual list items: inline */
+.wp-site-blocks header.wp-block-template-part nav.wp-block-navigation.is-horizontal .wp-block-navigation__container > li {
+  display: inline-flex !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Links style */
+.wp-site-blocks header.wp-block-template-part nav.wp-block-navigation.is-horizontal .wp-block-navigation__container a {
+  color: #333333 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  font-size: 16px !important;
+}
+
+/* Contact button on right (keeps spacing) */
+.wp-site-blocks header.wp-block-template-part .wp-block-buttons {
+  margin-left: 2rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+}
+
+/* Button visuals */
+.wp-site-blocks header.wp-block-template-part .wp-block-buttons .wp-block-button__link {
+  background-color: #8bc34a !important;
+  color: #fff !important;
+  border-radius: 30px !important;
+  padding: 10px 22px !important;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08) !important;
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
+/* Hide responsive hamburger and overlay icons on desktop (keep for mobile via media query) */
+@media (min-width: 769px) {
+  .wp-site-blocks header.wp-block-template-part .wp-block-navigation__responsive-container-open,
+  .wp-site-blocks header.wp-block-template-part .wp-block-navigation__responsive-close {
+    display: none !important;
+  }
+}
+
+/* Responsive: stack vertically on small screens */
+@media (max-width: 768px) {
+  .wp-site-blocks > header.wp-block-template-part,
+  .wp-site-blocks > header.wp-block-template-part .wp-block-group.alignfull,
+  .wp-site-blocks > header.wp-block-template-part .wp-block-group.alignwide {
+    flex-direction: column !important;
+    align-items: stretch !important;
+    padding: 0.5rem 1rem !important;
+  }
+  nav.wp-block-navigation.is-horizontal .wp-block-navigation__container {
+    flex-direction: column !important;
+    gap: 0.6rem !important;
+  }
+  .wp-site-blocks header.wp-block-template-part .wp-block-buttons {
+    margin-left: 0 !important;
+    margin-top: 0.6rem !important;
+    justify-content: flex-start !important;
+  }
+}
+</style>
+
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>

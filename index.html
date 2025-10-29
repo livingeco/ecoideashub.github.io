@@ -176,53 +176,84 @@ ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:
 <meta content="wp-content/uploads/2025/10/cropped-a-modern-elegant-withouttext_JPG-270x270.jpg" name="msapplication-TileImage"/>
 
 <style>
-/* === HEADER MENU FIX === */
+/* === FIX HEADER MENU (restore + align) === */
+
+/* Make header visible again */
 header,
-.wp-block-navigation,
-.wp-block-navigation__container {
+header .wp-block-group,
+header nav.wp-block-navigation {
   display: flex !important;
-  justify-content: space-between !important;
   align-items: center !important;
+  justify-content: space-between !important;
   flex-wrap: nowrap !important;
-  gap: 1.5rem !important;
+  gap: 1rem !important;
+  padding: 0.5rem 2rem !important;
+  background-color: #fff !important;
+  z-index: 1000 !important;
 }
 
-/* Horizontal nav links */
-.wp-block-navigation__container {
+/* Make sure navigation container is visible */
+header .wp-block-navigation__container {
+  display: flex !important;
   flex-direction: row !important;
+  align-items: center !important;
+  gap: 1.5rem !important;
+  margin: 0 !important;
+  padding: 0 !important;
   list-style: none !important;
-  margin: 0 !important;
-  padding: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
 }
 
-/* Nav items look neat */
-.wp-block-navigation__container li {
+/* Fix hidden nav due to responsive script */
+.wp-block-navigation__responsive-container {
+  display: flex !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: static !important;
+  transform: none !important;
+  height: auto !important;
+  background: transparent !important;
+}
+
+/* Horizontal list items */
+header .wp-block-navigation__container > li {
   display: inline-flex !important;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
-/* Text links */
-.wp-block-navigation__container a {
+/* Link styles */
+header .wp-block-navigation__container a {
   text-decoration: none !important;
   color: #333 !important;
   font-weight: 500 !important;
 }
 
-/* Contact Us button spacing */
-.wp-block-button {
-  margin-left: 1rem !important;
-}
-
-.wp-block-button__link {
+/* Contact button on right */
+header .wp-block-buttons .wp-block-button__link {
   background-color: #8bc34a !important;
   color: #fff !important;
-  border-radius: 25px !important;
-  padding: 0.5rem 1.5rem !important;
+  border-radius: 30px !important;
+  padding: 10px 25px !important;
   font-weight: 600 !important;
   text-decoration: none !important;
+  margin-left: 2rem !important;
+}
+
+/* Responsive stacking */
+@media (max-width: 768px) {
+  header,
+  header nav.wp-block-navigation {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  header .wp-block-navigation__container {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
 }
 </style>
+
 
 
 </head>

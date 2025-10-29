@@ -1,22 +1,22 @@
 a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
 
-/* === Footer vertical layout fix === */
-.footer-links {
+
+.footer-nav {
   display: flex;
-  align-items: flex-start;
   justify-content: flex-end;
-  gap: 1.5rem;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.footer-links ul {
+.footer-links {
   list-style-type: disc;
-  margin: 0;
   padding-left: 1.5rem;
+  margin: 0;
 }
 
-.footer-links ul li {
-  margin: 0.3rem 0;
-  line-height: 1.4;
+.footer-links li {
+  margin-bottom: 0.5rem;
 }
 
 .footer-links a {
@@ -24,15 +24,13 @@ a {text-decoration-thickness: 1px !important;text-underline-offset: .1em;}
   color: #333;
 }
 
-.footer-links .wp-block-button__link {
+.footer-button a {
+  background-color: #8bc34a;
+  color: white;
   border-radius: 25px;
-  padding: 0.5rem 1.2rem;
-  color: #fff;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
-  transition: all 0.2s ease;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-.footer-links .wp-block-button__link:hover {
-  background-color: #7ab738;
-}
-/* === End footer layout fix === */

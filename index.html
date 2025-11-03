@@ -266,6 +266,41 @@ body {
 }
 </style>
 
+<style>
+.wp-block-cover {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.wp-block-cover__image-background {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wp-block-cover__inner-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: soft overlay */
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.wp-block-cover__inner-container h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.wp-block-cover__inner-container p,
+.wp-block-cover__inner-container pre {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+</style>
+
 </head>
 <body class="home wp-singular page-template-default page page-id-17 wp-custom-logo wp-embed-responsive wp-theme-twentytwentyfive">
 <div class="wp-site-blocks">

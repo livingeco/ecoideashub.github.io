@@ -267,16 +267,21 @@ body {
 </style>
 
 <style>
+/* Desktop styles */
 .wp-block-cover {
   position: relative;
   text-align: center;
   color: white;
+  height: 100vh; /* Ensures the container has height for overlay */
+  overflow: hidden; /* Prevents overflow issues */
 }
 
 .wp-block-cover__image-background {
   width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
+  object-position: center;
 }
 
 .wp-block-cover__inner-container {
@@ -284,9 +289,10 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Optional: soft overlay */
+  background-color: rgba(0, 0, 0, 0.5); /* Soft overlay */
   padding: 20px;
   border-radius: 8px;
+  text-align: center;
 }
 
 .wp-block-cover__inner-container h1 {
@@ -300,9 +306,11 @@ body {
   margin-top: 10px;
 }
 
+/* Mobile styles */
 @media (max-width: 768px) {
   .wp-block-cover {
-    position: relative;
+    height: 100vh;
+    overflow: hidden;
   }
 
   .wp-block-cover__inner-container {

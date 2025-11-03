@@ -299,13 +299,22 @@ body {
   font-size: 1rem;
   margin-top: 10px;
 }
+
 @media (max-width: 768px) {
+  .wp-block-cover {
+    position: relative;
+  }
+
   .wp-block-cover__inner-container {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
     width: 90%;
     padding: 15px;
-    border-radius: 12px;
     background-color: rgba(0, 0, 0, 0.6);
-    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    text-align: center;
   }
 
   .wp-block-cover__inner-container h1 {
@@ -316,7 +325,6 @@ body {
   .wp-block-cover__inner-container p,
   .wp-block-cover__inner-container pre {
     font-size: 0.9rem;
-    line-height: 1.4;
     margin-top: 8px;
   }
 }

@@ -267,34 +267,39 @@ body {
 </style>
 
 <style>
-/* Desktop styles */
+/* Cover container */
 .wp-block-cover {
   position: relative;
   text-align: center;
   color: white;
-  height: 100vh; /* Ensures the container has height for overlay */
-  overflow: hidden; /* Prevents overflow issues */
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('assets/images/Sustainable-and-Zero-Waste-Living-1-3-1024x579.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
 }
 
+/* Hide the img tag if you're using background-image instead */
 .wp-block-cover__image-background {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-  object-position: center;
+  display: none;
 }
 
+/* Text overlay */
 .wp-block-cover__inner-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.5); /* Soft overlay */
+  background-color: rgba(0, 0, 0, 0.4);
   padding: 20px;
   border-radius: 8px;
   text-align: center;
+  width: 80%;
+  max-width: 600px;
 }
 
+/* Heading and subheading */
 .wp-block-cover__inner-container h1 {
   font-size: 2rem;
   margin: 0;
@@ -306,23 +311,12 @@ body {
   margin-top: 10px;
 }
 
-/* Mobile styles */
+/* Mobile adjustments */
 @media (max-width: 768px) {
-  .wp-block-cover {
-    height: 100vh;
-    overflow: hidden;
-  }
-
   .wp-block-cover__inner-container {
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
     width: 90%;
     padding: 15px;
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 12px;
-    text-align: center;
   }
 
   .wp-block-cover__inner-container h1 {

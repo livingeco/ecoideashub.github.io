@@ -337,6 +337,29 @@ body {
     font-size: 0.9rem;
     margin-top: 8px;
   }
+  
+  /* Fade-in animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animation to heading */
+.wp-block-cover__inner-container h1 {
+  animation: fadeInUp 1.2s ease-out forwards;
+}
+
+/* Apply animation to subtitle */
+.wp-block-cover__inner-container p,
+.wp-block-cover__inner-container pre {
+  animation: fadeInUp 1.6s ease-out forwards;
+  }
 }
 </style>
 

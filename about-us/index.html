@@ -224,17 +224,33 @@ body {
 </style>
 
 <style>
+.wp-block-post-title-wrapper {
+  position: relative;
+  min-height: 764px;
+  overflow: hidden;
+}
+
+.wp-block-post-title-background {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url('https://livingeco.github.io/ecoideashub.github.io/assets/images/Sustainable-and-Zero-Waste-Living-2-1024x579.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(8px);
+  z-index: 1;
+}
+
 .wp-block-post-title {
-background-image:url('https://livingeco.github.io/ecoideashub.github.io/assets/images/Sustainable-and-Zero-Waste-Living-2-1024x579.jpg');
-background-size:cover;
-background-position:center;
-background-repeat:no-repeat;
-background-attachment:fixed;
-filter: blur(8px);
-z-index: 1;
-  }
-}	
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--20);
+}
 </style>
+
 
 </head>
 <body class="wp-singular page-template-default page page-id-131 wp-custom-logo wp-embed-responsive wp-theme-twentytwentyfive">
